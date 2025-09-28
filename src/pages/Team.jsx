@@ -189,7 +189,7 @@ const teamData = [
     "year": "2024",
     "image": "https://media.licdn.com/dms/image/v2/D5603AQEa89vnpYSKzg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1723404895368?e=1757548800&v=beta&t=aOn0H36gOZyAc-MaRTbdu5pdlENlcoXqyZ9SV7zyPDM",
     "social": {
-      "linkedin": "https://linkedin.com",
+      "linkedin": "https://www.linkedin.com/in/aditya-pratap-singh27/",
       "twitter": "https://twitter.com",
       "github": "https://github.com"
     }
@@ -228,7 +228,7 @@ const teamData = [
     "role": "Android Dev Team",
     "badge": "Android Developer",
     "year": "2024",
-    "image": "https://res.cloudinary.com/ddf4mvmbe/image/upload/v1759055078/vikhyat_sir_j5xt4a.jpg",
+    "image": "https://res.cloudinary.com/ddf4mvmbe/image/upload/v1759061340/vikhyat_sir_ac0kp5.jpg",
     "social": {
       "linkedin": "https://linkedin.com",
       "twitter": "https://twitter.com",
@@ -241,7 +241,7 @@ const teamData = [
     "role": "Android Dev Team",
     "badge": "Android Developer",
     "year": "2024",
-    "image": "https://media.licdn.com/dms/image/v2/D5603AQF4NNPlcjywzA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1703076685260?e=1757548800&v=beta&t=whaauTeZzv5JFZ0WEfIE4493W7Tuttcl-cNHO-PR84A",
+    "image": "https://res.cloudinary.com/ddf4mvmbe/image/upload/v1759069603/vivek_wtoijd.jpg",
     "social": {
       "linkedin": "https://linkedin.com",
       "twitter": "https://twitter.com",
@@ -275,25 +275,12 @@ const teamData = [
     }
   },
   {
-    "id": 9,
-    "name": "Devesh Sharma",
-    "role": "Design Team",
-    "badge": "Designer",
-    "year": "2024",
-    "image": "https://media.licdn.com/dms/image/v2/D5603AQHLboAv1WBDOA/profile-displayphoto-shrink_800_800/B56ZdgLlZpG0Ac-/0/1749665339927?e=1757548800&v=beta&t=2K-igXb45Ra9uccHSdYrFiNUqI2KDDj4NsVfMNhA0cg",
-    "social": {
-      "linkedin": "https://linkedin.com",
-      "twitter": "https://twitter.com",
-      "github": "https://github.com"
-    }
-  },
-  {
     "id": 10,
     "name": "Madhu Yadav",
     "role": "Design Team",
     "badge": "Designer",
     "year": "2024",
-    "image": "",
+    "image": "https://res.cloudinary.com/ddf4mvmbe/image/upload/v1759068837/madhu_k2w73o.jpg",
     "social": {
       "linkedin": "https://linkedin.com",
       "twitter": "https://twitter.com",
@@ -332,7 +319,7 @@ const teamData = [
     "role": "DSA/CP Team",
     "badge": "Competitive Programmer",
     "year": "2024",
-    "image": "https://media.licdn.com/dms/image/v2/D5603AQGycROglmsqBQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1724610837222?e=1757548800&v=beta&t=qwXEG5C4PYO7ga9Gkt1sFfaamAJmoHfy3xJhgB2QlIo",
+    "image": "https://res.cloudinary.com/ddf4mvmbe/image/upload/v1759068970/shivam_scb6qq.jpg",
     "social": {
       "linkedin": "https://linkedin.com",
       "twitter": "https://twitter.com",
