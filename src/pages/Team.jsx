@@ -213,7 +213,7 @@ const teamData = [
     "role": "Web Dev Team",
     "badge": "Web Developer",
     "year": "2024",
-    "image": "https://media.licdn.com/dms/image/v2/D5603AQF1BCDvEoRJZw/profile-displayphoto-crop_800_800/B56Zgnixf7HkAM-/0/1753010086392?e=1757548800&v=beta&t=IDNeaYzST-b8KtrbAgQI4uw7G9VUpLX_Wh8-2g9X8K4",
+    "image": "https://res.cloudinary.com/ddf4mvmbe/image/upload/v1759054318/anmol_mintp3.jpg",
     "social": {
       "linkedin": "https://linkedin.com",
       "twitter": "https://twitter.com",
