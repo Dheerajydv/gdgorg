@@ -50,7 +50,7 @@ const TeamMemberCard = styled(motion.div)`
   border-radius: 12px;
   overflow: hidden;
   transition: transform 0.3s ease;
-  height: 400px;
+  height: ${({ $isLead }) => $isLead ? '400px' : '450px'};
   display: flex;
   flex-direction: column;
   &:hover {
@@ -78,6 +78,7 @@ const MemberImage = styled.div`
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: top center;
     transition: transform 0.5s ease;
   }
   ${TeamMemberCard}:hover & img {
@@ -227,7 +228,7 @@ const teamData = [
     "role": "Android Dev Team",
     "badge": "Android Developer",
     "year": "2024",
-    "image": "https://media.licdn.com/dms/image/v2/D5603AQHmb7KWgJr-oQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1733056715934?e=1757548800&v=beta&t=jjKb4Tf9hBTpF83hBZCjm1Ixi3TLorvKoMNfiXmRAHs",
+    "image": "https://res.cloudinary.com/ddf4mvmbe/image/upload/v1759055078/vikhyat_sir_j5xt4a.jpg",
     "social": {
       "linkedin": "https://linkedin.com",
       "twitter": "https://twitter.com",
@@ -357,7 +358,7 @@ const teamData = [
     "role": "DSA/CP Team",
     "badge": "Competitive Programmer",
     "year": "2024",
-    "image": "https://media.licdn.com/dms/image/v2/D4D35AQEnfej3Rn6K9w/profile-framedphoto-shrink_800_800/profile-framedphoto-shrink_800_800/0/1702121778771?e=1754974800&v=beta&t=LUhT2Ib91vAhsPDHAXv3XnjjIIcycUiYhtWkaXYXSIs",
+    "image": "https://res.cloudinary.com/ddf4mvmbe/image/upload/v1759060557/kunal_an6muy.png",
     "social": {
       "linkedin": "https://linkedin.com",
       "twitter": "https://twitter.com",
@@ -1421,7 +1422,11 @@ export default function Team() {
             <TeamGrid>
               {filteredMembers?.map((member) => (
                 <TiltWrapper key={member.id}>
-                  <TeamMemberCard variants={itemVariants} className="transition-transform duration-300 ease-out">
+                  <TeamMemberCard 
+                    variants={itemVariants} 
+                    className="transition-transform duration-300 ease-out"
+                    $isLead={selectedYear === "GDG Lead"}
+                  >
                   <MemberImage>
                     <img src={member?.image} alt={member.name} />
                     <button onClick={handleUpload}>Upload</button>
