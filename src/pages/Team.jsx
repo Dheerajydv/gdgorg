@@ -253,7 +253,7 @@ const teamData = [
     "role": "Android Dev Team",
     "badge": "Android Developer",
     "year": "2024",
-    "image": "https://media.licdn.com/dms/image/v2/D4D03AQFJJlEyHTS5zw/profile-displayphoto-shrink_400_400/B4DZaYK.6JG0Ak-/0/1746309739690?e=1757548800&v=beta&t=PaC9ykbJEQlhiBj0EzVjHVw_oLByBShfekRBPyoZVJ0",
+    "image": "https://res.cloudinary.com/dsvnqnvt7/image/upload/v1759056016/saksham_sir_rmomui.jpg",
     "social": {
       "linkedin": "https://linkedin.com",
       "twitter": "https://twitter.com",
