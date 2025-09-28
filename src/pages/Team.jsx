@@ -788,6 +788,20 @@ const teamData = [
     }
   },
   {
+    "id": 200,
+    "name": "Vikhyat Singh",
+    "role": "GDG Lead 2025-26",
+    "position": "GDG Lead",
+    "badge": "Tech Lead",
+    "year": "2025",
+    "image": "https://res.cloudinary.com/ddf4mvmbe/image/upload/v1759061340/vikhyat_sir_ac0kp5.jpg",
+    "social": {
+      "linkedin": "https://www.linkedin.com/in/vikhyat-singh/",
+      "twitter": "https://twitter.com/vikhyat_singh",
+      "github": "https://github.com/vikhyat-singh"
+    }
+  },
+  {
     "id": 30,
     "name": "Aastha Gupta",
     "role": "GDG Lead 2024-25",
