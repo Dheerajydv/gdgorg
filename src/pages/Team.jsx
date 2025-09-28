@@ -332,7 +332,7 @@ const teamData = [
     "role": "DSA/CP Team",
     "badge": "Competitive Programmer",
     "year": "2024",
-    "image": "https://media.licdn.com/dms/image/v2/D5603AQECWBk897J3zw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1729078511479?e=1757548800&v=beta&t=eSkzFgmswrjpVirQwGFVdHL9s0uW7BjdRaw_yfczVp0",
+    "image": "https://res.cloudinary.com/ddf4mvmbe/image/upload/v1759077821/kriti_z2nrro.jpg",
     "social": {
       "linkedin": "https://linkedin.com",
       "twitter": "https://twitter.com",
@@ -371,7 +371,7 @@ const teamData = [
     "role": "Content & Management Team",
     "badge": "Content Creator",
     "year": "2024",
-    "image": "https://media.licdn.com/dms/image/v2/D5603AQHRMH-HEBPM6A/profile-displayphoto-crop_800_800/B56ZeHZyFuGQAQ-/0/1750323375140?e=1757548800&v=beta&t=aWonbYhBNeGiS49iUIhsudlveptxJD-sHSQnC-hwH80",
+    "image": "https://res.cloudinary.com/ddf4mvmbe/image/upload/v1759078304/ananya_ei3pwx.png",
     "social": {
       "linkedin": "https://linkedin.com",
       "twitter": "https://twitter.com",
@@ -384,7 +384,7 @@ const teamData = [
     "role": "Content & Management Team",
     "badge": "Content Creator",
     "year": "2024",
-    "image": "https://media.licdn.com/dms/image/v2/D4E03AQEdfpiCZDBydg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1722261829049?e=1757548800&v=beta&t=xrhwlwVFRImdJp2MKLZUEQhJfDM9X7lt7uZTtyZomb0",
+    "image": "https://res.cloudinary.com/ddf4mvmbe/image/upload/v1759078441/ashutosh_boekul.jpg",
     "social": {
       "linkedin": "https://linkedin.com",
       "twitter": "https://twitter.com",
@@ -397,7 +397,7 @@ const teamData = [
     "role": "Content & Management Team",
     "badge": "Content Creator",
     "year": "2024",
-    "image": "https://media.licdn.com/dms/image/v2/D5603AQGUxCdpq4t6Ww/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1729175434582?e=1757548800&v=beta&t=xxIS4ohaFE1sI5nk8tQ3myMOy6oUtSlsoAib6jSttpc",
+    "image": "https://res.cloudinary.com/ddf4mvmbe/image/upload/v1759078528/atishay_qrls62.jpg",
     "social": {
       "linkedin": "https://linkedin.com",
       "twitter": "https://twitter.com",
@@ -410,7 +410,7 @@ const teamData = [
     "role": "Content & Management Team",
     "badge": "Content Creator",
     "year": "2024",
-    "image": "https://media.licdn.com/dms/image/v2/D4E03AQG_P2_fBxurTA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1710781652551?e=1757548800&v=beta&t=gmb5_8m7DDg3BOpafOubXHyrRjut_0NayixneRYeDm0",
+    "image": "https://res.cloudinary.com/ddf4mvmbe/image/upload/v1759078577/jahnavi_kd1kau.jpg",
     "social": {
       "linkedin": "https://linkedin.com",
       "twitter": "https://twitter.com",
@@ -423,7 +423,7 @@ const teamData = [
     "role": "AI/ML Team",
     "badge": "AI/ML Developer",
     "year": "2024",
-    "image": "https://media.licdn.com/dms/image/v2/D5603AQE1Nkp-JtpHgQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1728791310476?e=1757548800&v=beta&t=xu3NMkemgret_IVz3cPxVHe7u7VrBTgobayJFkq9gec",
+    "image": "https://res.cloudinary.com/ddf4mvmbe/image/upload/v1759078683/riya_ffqhox.jpg",
     "social": {
       "linkedin": "https://www.linkedin.com/in/riya-verma-28b461289/",
       "twitter": "https://twitter.com",
@@ -436,7 +436,7 @@ const teamData = [
     "role": "AI/ML Team",
     "badge": "AI/ML Developer",
     "year": "2024",
-    "image": "https://media.licdn.com/dms/image/v2/D4D03AQHUAnTVEym1bA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1696585718371?e=1757548800&v=beta&t=eqO2eyFAhCnjRyPbnKuAEbiOqk6t2eJU-Av0njN_w18",
+    "image": "https://res.cloudinary.com/ddf4mvmbe/image/upload/v1759078783/snehil_hdflcr.jpg",
     "social": {
       "linkedin": "https://www.linkedin.com/in/snehil-saxena-b541a4264/",
       "twitter": "https://twitter.com",
@@ -449,7 +449,34 @@ const teamData = [
     "role": "AI/ML Team",
     "badge": "AI/ML Developer",
     "year": "2024",
-    "image": "https://media.licdn.com/dms/image/v2/D5603AQH-4UoEbHxoEg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1714134966046?e=1757548800&v=beta&t=OK0usU7QQeCOBbqci7zOH1VbJKxmy1mgCOU5-v6MdDM",
+    "image": "https://res.cloudinary.com/ddf4mvmbe/image/upload/v1759078874/ahay_g4zblh.png",
+    "social": {
+      "linkedin": "https://linkedin.com",
+      "twitter": "https://twitter.com",
+      "github": "https://github.com"
+    }
+  },
+  // 2025 Team Members
+  {
+    "id": 100,
+    "name": "Shaurya Srivastava",
+    "role": "Web Dev Team",
+    "badge": "Web Developer",
+    "year": "2025",
+    "image": "https://res.cloudinary.com/ddf4mvmbe/image/upload/v1759079904/meside_okwmn0.jpg",
+    "social": {
+      "linkedin": "https://www.linkedin.com/in/shaurya-srivastava/",
+      "twitter": "https://twitter.com/shaurya_sriv",
+      "github": "https://github.com/shaurya-srivastava"
+    }
+  },
+  {
+    "id": 101,
+    "name": "Abhi Aryan",
+  "role": " UI/UX Team",
+    "badge": "Video Editor",
+    "year": "2025",
+    "image": "https://res.cloudinary.com/ddf4mvmbe/image/upload/v1759080943/abhi_laolol.jpg",
     "social": {
       "linkedin": "https://linkedin.com",
       "twitter": "https://twitter.com",
@@ -457,17 +484,302 @@ const teamData = [
     }
   },
   {
-    "id": 85,
-    "name": "Vikhyat Singh",
-    "role": "GDG Lead 2025-26",
-    "position": "GDG Lead",
-    "badge": "Tech Lead",
-    "year": "2024",
-    "image": "https://res.cloudinary.com/ddf4mvmbe/image/upload/v1759042667/placeholder_lead.jpg",
+    "id": 102,
+    "name": "Aradhya Singh",
+    "role": "Management Team",
+    "badge": "Management and Outreach",
+    "year": "2025",
+    "image": "https://res.cloudinary.com/ddf4mvmbe/image/upload/v1759080710/aradhya_zluxxl.jpg",
     "social": {
-      "linkedin": "https://www.linkedin.com/in/newlead/",
-      "twitter": "",
-      "github": ""
+      "linkedin": "https://linkedin.com",
+      "twitter": "https://twitter.com",
+      "github": "https://github.com"
+    }
+  },
+  {
+    "id": 103,
+    "name": "Shreya Tiwari",
+    "role": "Design Team",
+    "badge": "Designer",
+    "year": "2025",
+    "image": "https://res.cloudinary.com/ddf4mvmbe/image/upload/v1759080000/placeholder.jpg",
+    "social": {
+      "linkedin": "https://linkedin.com",
+      "twitter": "https://twitter.com",
+      "github": "https://github.com"
+    }
+  },
+  {
+    "id": 104,
+    "name": "Saloni Verma",
+    "role": "DSA/CP Team",
+    "badge": "Competitive Programmer",
+    "year": "2025",
+    "image": "https://res.cloudinary.com/ddf4mvmbe/image/upload/v1759081658/saloni_ws4xib.jpg",
+    "social": {
+      "linkedin": "https://linkedin.com",
+      "twitter": "https://twitter.com",
+      "github": "https://github.com"
+    }
+  },
+  {
+    "id": 105,
+    "name": "Vikas Chaurasia",
+    "role": "Content & Management Team",
+    "badge": "Content Creator",
+    "year": "2025",
+    "image": "https://res.cloudinary.com/ddf4mvmbe/image/upload/v1759081404/vikas_l8j7y0.jpg",
+    "social": {
+      "linkedin": "https://linkedin.com",
+      "twitter": "https://twitter.com",
+      "github": "https://github.com"
+    }
+  },
+  {
+    "id": 106,
+    "name": "Priyanshu Chausasia",
+    "role": "AI/ML Team",
+    "badge": "AI/ML Developer",
+    "year": "2025",
+    "image": "https://res.cloudinary.com/ddf4mvmbe/image/upload/v1759081939/priyanshu_z6mrpn.jpg",
+    "social": {
+      "linkedin": "https://linkedin.com",
+      "twitter": "https://twitter.com",
+      "github": "https://github.com"
+    }
+  },
+  {
+    "id": 107,
+    "name": "Shubham Yadav",
+    "role": "Web Dev Team",
+    "badge": "Web Developer",
+    "year": "2025",
+    "image": "https://res.cloudinary.com/ddf4mvmbe/image/upload/v1759082067/shubham_z7xcm5.jpg",
+    "social": {
+      "linkedin": "https://linkedin.com",
+      "twitter": "https://twitter.com",
+      "github": "https://github.com"
+    }
+  },
+  {
+    "id": 108,
+    "name": "Manish Gupta",
+    "role": "Android Dev Team",
+    "badge": "Android Developer",
+    "year": "2025",
+    "image": "https://res.cloudinary.com/ddf4mvmbe/image/upload/v1759082390/manish_gnzoip.jpg",
+    "social": {
+      "linkedin": "https://linkedin.com",
+      "twitter": "https://twitter.com",
+      "github": "https://github.com"
+    }
+  },
+  {
+    "id": 109,
+    "name": "Saharsh Vijay Singh",
+    "role": "Design Team",
+    "badge": "Designer",
+    "year": "2025",
+    "image": "https://res.cloudinary.com/ddf4mvmbe/image/upload/v1759082702/saharsh_ttcvvi.png",
+    "social": {
+      "linkedin": "https://linkedin.com",
+      "twitter": "https://twitter.com",
+      "github": "https://github.com"
+    }
+  },
+  {
+    "id": 110,
+    "name": "Anna Thompson",
+    "role": "DSA/CP Team",
+    "badge": "Competitive Programmer",
+    "year": "2025",
+    "image": "https://res.cloudinary.com/ddf4mvmbe/image/upload/v1759080000/placeholder.jpg",
+    "social": {
+      "linkedin": "https://linkedin.com",
+      "twitter": "https://twitter.com",
+      "github": "https://github.com"
+    }
+  },
+  {
+    "id": 111,
+    "name": "Ryan Anderson",
+    "role": "Content & Management Team",
+    "badge": "Content Creator",
+    "year": "2025",
+    "image": "https://res.cloudinary.com/ddf4mvmbe/image/upload/v1759080000/placeholder.jpg",
+    "social": {
+      "linkedin": "https://linkedin.com",
+      "twitter": "https://twitter.com",
+      "github": "https://github.com"
+    }
+  },
+  {
+    "id": 112,
+    "name": "Maya Patel",
+    "role": "AI/ML Team",
+    "badge": "AI/ML Developer",
+    "year": "2025",
+    "image": "https://res.cloudinary.com/ddf4mvmbe/image/upload/v1759080000/placeholder.jpg",
+    "social": {
+      "linkedin": "https://linkedin.com",
+      "twitter": "https://twitter.com",
+      "github": "https://github.com"
+    }
+  },
+  {
+    "id": 113,
+    "name": "Kevin Lee",
+    "role": "Web Dev Team",
+    "badge": "Web Developer",
+    "year": "2025",
+    "image": "https://res.cloudinary.com/ddf4mvmbe/image/upload/v1759080000/placeholder.jpg",
+    "social": {
+      "linkedin": "https://linkedin.com",
+      "twitter": "https://twitter.com",
+      "github": "https://github.com"
+    }
+  },
+  {
+    "id": 114,
+    "name": "Rachel Green",
+    "role": "Android Dev Team",
+    "badge": "Android Developer",
+    "year": "2025",
+    "image": "https://res.cloudinary.com/ddf4mvmbe/image/upload/v1759080000/placeholder.jpg",
+    "social": {
+      "linkedin": "https://linkedin.com",
+      "twitter": "https://twitter.com",
+      "github": "https://github.com"
+    }
+  },
+  {
+    "id": 115,
+    "name": "Tom Wilson",
+    "role": "Design Team",
+    "badge": "Designer",
+    "year": "2025",
+    "image": "https://res.cloudinary.com/ddf4mvmbe/image/upload/v1759080000/placeholder.jpg",
+    "social": {
+      "linkedin": "https://linkedin.com",
+      "twitter": "https://twitter.com",
+      "github": "https://github.com"
+    }
+  },
+  {
+    "id": 116,
+    "name": "Sophie Chen",
+    "role": "DSA/CP Team",
+    "badge": "Competitive Programmer",
+    "year": "2025",
+    "image": "https://res.cloudinary.com/ddf4mvmbe/image/upload/v1759080000/placeholder.jpg",
+    "social": {
+      "linkedin": "https://linkedin.com",
+      "twitter": "https://twitter.com",
+      "github": "https://github.com"
+    }
+  },
+  {
+    "id": 117,
+    "name": "James Taylor",
+    "role": "Content & Management Team",
+    "badge": "Content Creator",
+    "year": "2025",
+    "image": "https://res.cloudinary.com/ddf4mvmbe/image/upload/v1759080000/placeholder.jpg",
+    "social": {
+      "linkedin": "https://linkedin.com",
+      "twitter": "https://twitter.com",
+      "github": "https://github.com"
+    }
+  },
+  {
+    "id": 118,
+    "name": "Emma White",
+    "role": "AI/ML Team",
+    "badge": "AI/ML Developer",
+    "year": "2025",
+    "image": "https://res.cloudinary.com/ddf4mvmbe/image/upload/v1759080000/placeholder.jpg",
+    "social": {
+      "linkedin": "https://linkedin.com",
+      "twitter": "https://twitter.com",
+      "github": "https://github.com"
+    }
+  },
+  {
+    "id": 119,
+    "name": "Daniel Kim",
+    "role": "Web Dev Team",
+    "badge": "Web Developer",
+    "year": "2025",
+    "image": "https://res.cloudinary.com/ddf4mvmbe/image/upload/v1759080000/placeholder.jpg",
+    "social": {
+      "linkedin": "https://linkedin.com",
+      "twitter": "https://twitter.com",
+      "github": "https://github.com"
+    }
+  },
+  {
+    "id": 120,
+    "name": "Olivia Brown",
+    "role": "Android Dev Team",
+    "badge": "Android Developer",
+    "year": "2025",
+    "image": "https://res.cloudinary.com/ddf4mvmbe/image/upload/v1759080000/placeholder.jpg",
+    "social": {
+      "linkedin": "https://linkedin.com",
+      "twitter": "https://twitter.com",
+      "github": "https://github.com"
+    }
+  },
+  {
+    "id": 121,
+    "name": "Noah Davis",
+    "role": "Design Team",
+    "badge": "Designer",
+    "year": "2025",
+    "image": "https://res.cloudinary.com/ddf4mvmbe/image/upload/v1759080000/placeholder.jpg",
+    "social": {
+      "linkedin": "https://linkedin.com",
+      "twitter": "https://twitter.com",
+      "github": "https://github.com"
+    }
+  },
+  {
+    "id": 122,
+    "name": "Ava Miller",
+    "role": "DSA/CP Team",
+    "badge": "Competitive Programmer",
+    "year": "2025",
+    "image": "https://res.cloudinary.com/ddf4mvmbe/image/upload/v1759080000/placeholder.jpg",
+    "social": {
+      "linkedin": "https://linkedin.com",
+      "twitter": "https://twitter.com",
+      "github": "https://github.com"
+    }
+  },
+  {
+    "id": 123,
+    "name": "Liam Wilson",
+    "role": "Content & Management Team",
+    "badge": "Content Creator",
+    "year": "2025",
+    "image": "https://res.cloudinary.com/ddf4mvmbe/image/upload/v1759080000/placeholder.jpg",
+    "social": {
+      "linkedin": "https://linkedin.com",
+      "twitter": "https://twitter.com",
+      "github": "https://github.com"
+    }
+  },
+  {
+    "id": 124,
+    "name": "Isabella Garcia",
+    "role": "AI/ML Team",
+    "badge": "AI/ML Developer",
+    "year": "2025",
+    "image": "https://res.cloudinary.com/ddf4mvmbe/image/upload/v1759080000/placeholder.jpg",
+    "social": {
+      "linkedin": "https://linkedin.com",
+      "twitter": "https://twitter.com",
+      "github": "https://github.com"
     }
   },
   {
@@ -1375,6 +1687,12 @@ export default function Team() {
               onClick={() => setSelectedYear('GDG Lead')}
             >
               Our Leads
+            </FilterButton>
+            <FilterButton
+              active={selectedYear === '2025'}
+              onClick={() => setSelectedYear('2025')}
+            >
+              2025
             </FilterButton>
             <FilterButton
               active={selectedYear === '2024'}
