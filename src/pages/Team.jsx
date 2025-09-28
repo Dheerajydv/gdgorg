@@ -80,6 +80,11 @@ const MemberImage = styled.div`
     object-fit: cover;
     object-position: top center;
     transition: transform 0.5s ease;
+    will-change: transform;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
   }
   ${TeamMemberCard}:hover & img {
     transform: scale(1.05);
@@ -489,7 +494,7 @@ const teamData = [
     "role": "Management Team",
     "badge": "Management and Outreach",
     "year": "2025",
-    "image": "https://res.cloudinary.com/ddf4mvmbe/image/upload/v1759080710/aradhya_zluxxl.jpg",
+    "image": "https://res.cloudinary.com/ddf4mvmbe/image/upload/v1759083620/aradhya_m6kxlm.jpg",
     "social": {
       "linkedin": "https://linkedin.com",
       "twitter": "https://twitter.com",
@@ -589,11 +594,11 @@ const teamData = [
   },
   {
     "id": 110,
-    "name": "Anna Thompson",
+    "name": "Darshika Bhaskar",
     "role": "DSA/CP Team",
     "badge": "Competitive Programmer",
     "year": "2025",
-    "image": "https://res.cloudinary.com/ddf4mvmbe/image/upload/v1759080000/placeholder.jpg",
+    "image": "https://res.cloudinary.com/ddf4mvmbe/image/upload/v1759083507/darshika_ftogro.jpg",
     "social": {
       "linkedin": "https://linkedin.com",
       "twitter": "https://twitter.com",
@@ -1584,6 +1589,28 @@ const teamData = [
   }
 ];
 
+// Utility function to optimize Cloudinary URLs
+const optimizeCloudinaryUrl = (url) => {
+  if (!url || !url.includes('res.cloudinary.com')) {
+    return url;
+  }
+  
+  try {
+    const urlObj = new URL(url);
+    // Add Cloudinary optimization parameters
+    urlObj.searchParams.set('f_auto', 'true'); // Auto format selection (WebP, AVIF, etc.)
+    urlObj.searchParams.set('q_auto', 'true'); // Auto quality optimization
+    urlObj.searchParams.set('w_auto', 'true'); // Auto width based on container
+    urlObj.searchParams.set('c_scale', 'true'); // Scale to fit container
+    urlObj.searchParams.set('dpr_auto', 'true'); // Auto device pixel ratio
+    urlObj.searchParams.set('fl_progressive', 'true'); // Progressive loading
+    return urlObj.toString();
+  } catch (error) {
+    console.warn('Error optimizing Cloudinary URL:', error);
+    return url;
+  }
+};
+
 export default function Team() {
   const { fileUrl } = useAuth();
   const [upload, setUpload] = useState(false);
@@ -1733,7 +1760,26 @@ export default function Team() {
                     $isLead={selectedYear === "GDG Lead"}
                   >
                   <MemberImage>
-                    <img src={member?.image} alt={member.name} />
+                    <img 
+                      src={optimizeCloudinaryUrl(member?.image)} 
+                      alt={member.name}
+                      loading="lazy"
+                      decoding="async"
+                      style={{
+                        opacity: 0,
+                        transition: 'opacity 0.3s ease-in-out'
+                      }}
+                      onLoad={(e) => {
+                        e.target.style.opacity = '1';
+                      }}
+                      onError={(e) => {
+                        e.target.style.opacity = '1';
+                        // Fallback to original URL if optimization fails
+                        if (e.target.src !== member?.image) {
+                          e.target.src = member?.image || '';
+                        }
+                      }}
+                    />
                     <button onClick={handleUpload}>Upload</button>
                   </MemberImage>
 
