@@ -266,7 +266,7 @@ const teamData = [
     "role": "Design Team",
     "badge": "Designer",
     "year": "2024",
-    "image": "https://media.licdn.com/dms/image/v2/D5603AQFKDYvrS4DpMg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1710610293596?e=1757548800&v=beta&t=4rSmedSBlreiwIO1Bt04Huju2nf22ZX-nWFgdbb5Ba4",
+    "image": "https://res.cloudinary.com/dsvnqnvt7/image/upload/v1759056984/Screenshot_2025-09-28_162518_bqe93l.png",
     "social": {
       "linkedin": "https://linkedin.com",
       "twitter": "https://twitter.com",
@@ -292,7 +292,7 @@ const teamData = [
     "role": "Design Team",
     "badge": "Designer",
     "year": "2024",
-    "image": "https://media.licdn.com/dms/image/v2/D5603AQGdNAk-qG4hKw/profile-displayphoto-shrink_800_800/B56ZSFAiQcHoAc-/0/1737398299316?e=1757548800&v=beta&t=a4n6u5hmzDdXaLY9D9kC8YQ2szpgLYA7R1ql7LeKlm0",
+    "image": "",
     "social": {
       "linkedin": "https://linkedin.com",
       "twitter": "https://twitter.com",
@@ -305,7 +305,7 @@ const teamData = [
     "role": "Design Team",
     "badge": "Designer",
     "year": "2024",
-    "image": "https://media.licdn.com/dms/image/v2/D5603AQGWwlhXsCP9lw/profile-displayphoto-shrink_800_800/B56ZY._EODGQAk-/0/1744813443460?e=1757548800&v=beta&t=mAYbj1konDnvfCNf01kF-zt-yXUgLFo6IY-YCPNO1Go",
+    "image": "https://res.cloudinary.com/dsvnqnvt7/image/upload/v1759058503/prateek_sir_s047ei.jpg",
     "social": {
       "linkedin": "https://linkedin.com",
       "twitter": "https://twitter.com",
@@ -318,7 +318,7 @@ const teamData = [
     "role": "DSA/CP Team",
     "badge": "Competitive Programmer",
     "year": "2024",
-    "image": "https://media.licdn.com/dms/image/v2/D5603AQFbKt16IW12Ag/profile-displayphoto-crop_800_800/B56ZhLiDHXHkAI-/0/1753613875792?e=1757548800&v=beta&t=UiguwgxlfpUIfa7zyz2Va-iDECH-E3WoqDCayFqk_DE",
+    "image": "https://res.cloudinary.com/dsvnqnvt7/image/upload/v1759058729/Screenshot_2025-09-28_165412_klktgc.png",
     "social": {
       "linkedin": "https://linkedin.com",
       "twitter": "https://twitter.com",
