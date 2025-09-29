@@ -743,7 +743,7 @@ const teamData = [
     "role": "UI/UX Team",
     "badge": "Designer",
     "year": "2025",
-    "image": "https://res.cloudinary.com/ddf4mvmbe/image/upload/v1759080000/placeholder.jpg",
+    "image": "https://res.cloudinary.com/dsvnqnvt7/image/upload/v1759165687/bhoomi_isgc7f.jpg",
     "social": {
       "linkedin": "https://linkedin.com",
       "twitter": "https://twitter.com",
