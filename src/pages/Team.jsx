@@ -783,7 +783,7 @@ const teamData = [
     "role": "Content & Management Team",
     "badge": "Content Creator",
     "year": "2025",
-    "image": "https://res.cloudinary.com/ddf4mvmbe/image/upload/v1759080000/placeholder.jpg",
+    "image": "https://res.cloudinary.com/ddf4mvmbe/image/upload/v1759158154/himanshi_wzj8jq.jpg",
     "social": {
       "linkedin": "https://linkedin.com",
       "twitter": "https://twitter.com",
