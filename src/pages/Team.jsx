@@ -632,7 +632,7 @@ const teamData = [
     }
   },
   {
-    "id": 113,
+    "id": 118,
     "name": "Ananya Yadav",
     "role": "UI/UX Team",
     "badge": "Designer",
@@ -645,7 +645,7 @@ const teamData = [
     }
   },
   {
-    "id": 114,
+    "id": 119,
     "name": "Anchal Patel",
     "role": " Web Dev Team",
     "badge": "Web Developer",
@@ -658,7 +658,7 @@ const teamData = [
     }
   },
   {
-    "id": 115,
+    "id": 120,
     "name": "Bhoomi Srivastava",
     "role": "UI/UX Team",
     "badge": "Designer",
@@ -671,7 +671,7 @@ const teamData = [
     }
   },
   {
-    "id": 116,
+    "id": 121,
     "name": "Aman Kumar",
     "role": "DSA/CP Team",
     "badge": "Competitive Programmer",
@@ -684,7 +684,7 @@ const teamData = [
     }
   },
   {
-    "id": 117,
+    "id": 122,
     "name": "Ayush Dubey",
     "role": "Content & Management Team",
     "badge": "Content Creator",
@@ -696,71 +696,7 @@ const teamData = [
       "github": "https://github.com"
     }
   },
-  {
-    "id": 118,
-    "name": "Emma W",
-    "role": "AI/ML Team",
-    "badge": "AI/ML Developer",
-    "year": "2025",
-    "image": "https://res.cloudinary.com/ddf4mvmbe/image/upload/v1759080000/placeholder.jpg",
-    "social": {
-      "linkedin": "https://linkedin.com",
-      "twitter": "https://twitter.com",
-      "github": "https://github.com"
-    }
-  },
-  {
-    "id": 119,
-    "name": "Daniel Kim",
-    "role": "Web Dev Team",
-    "badge": "Web Developer",
-    "year": "2025",
-    "image": "https://res.cloudinary.com/ddf4mvmbe/image/upload/v1759080000/placeholder.jpg",
-    "social": {
-      "linkedin": "https://linkedin.com",
-      "twitter": "https://twitter.com",
-      "github": "https://github.com"
-    }
-  },
-  {
-    "id": 120,
-    "name": "Olivia Brown",
-    "role": "Android Dev Team",
-    "badge": "Android Developer",
-    "year": "2025",
-    "image": "https://res.cloudinary.com/ddf4mvmbe/image/upload/v1759080000/placeholder.jpg",
-    "social": {
-      "linkedin": "https://linkedin.com",
-      "twitter": "https://twitter.com",
-      "github": "https://github.com"
-    }
-  },
-  {
-    "id": 121,
-    "name": "Noah Davis",
-    "role": "Design Team",
-    "badge": "Designer",
-    "year": "2025",
-    "image": "https://res.cloudinary.com/ddf4mvmbe/image/upload/v1759080000/placeholder.jpg",
-    "social": {
-      "linkedin": "https://linkedin.com",
-      "twitter": "https://twitter.com",
-      "github": "https://github.com"
-    }
-  },
-  {
-    "id": 122,
-    "name": "Ava Miller",
-    "role": "DSA/CP Team",
-    "badge": "Competitive Programmer",
-    "year": "2025",
-    "image": "https://res.cloudinary.com/ddf4mvmbe/image/upload/v1759080000/placeholder.jpg",
-    "social": {
-      "linkedin": "https://linkedin.com",
-      "twitter": "https://twitter.com",
-      "github": "https://github.com"
-    }
-  },
+  
   {
     "id": 123,
     "name": "Liam Wilson",
