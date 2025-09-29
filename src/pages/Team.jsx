@@ -151,8 +151,10 @@ const SocialLink = styled(motion.a)`
 const FilterButton = styled.button`
   padding: 10px 20px;
   border-radius: 25px;
-  border: 2px solid ${props => props.theme.primary};
-  background: ${props => props.active ? props.theme.primary : 'transparent'};
+  // border: 2px solid ${props => props.theme.primary};
+  background: ${props => props.active 
+    ? props.theme.primary 
+    : (props.theme.name === 'dark' ? '#2b2b2b9c' : '#e7e5e5bf')};
   color: ${props => props.active ? 'white' : props.theme.colors.text.primary};
   cursor: pointer;
   transition: all 0.3s ease;
@@ -620,11 +622,11 @@ const teamData = [
   },
   {
     "id": 112,
-    "name": "Maya Patel",
+    "name": "Samriddhi Shree",
     "role": "AI/ML Team",
     "badge": "AI/ML Developer",
     "year": "2025",
-    "image": "https://res.cloudinary.com/ddf4mvmbe/image/upload/v1759080000/placeholder.jpg",
+    "image": "https://res.cloudinary.com/ddf4mvmbe/image/upload/v1759137457/samriddhi_d92w3g.jpg",
     "social": {
       "linkedin": "https://linkedin.com",
       "twitter": "https://twitter.com",
@@ -633,11 +635,11 @@ const teamData = [
   },
   {
     "id": 113,
-    "name": "Kevin Lee",
+    "name": "Nikhil Yadav",
     "role": "Web Dev Team",
     "badge": "Web Developer",
     "year": "2025",
-    "image": "https://res.cloudinary.com/ddf4mvmbe/image/upload/v1759080000/placeholder.jpg",
+    "image": "https://res.cloudinary.com/ddf4mvmbe/image/upload/v1759137463/nikhi_jc6hur.jpg",
     "social": {
       "linkedin": "https://linkedin.com",
       "twitter": "https://twitter.com",
@@ -646,11 +648,11 @@ const teamData = [
   },
   {
     "id": 114,
-    "name": "Rachel Green",
+    "name": "Aditi Pandey",
     "role": "Android Dev Team",
     "badge": "Android Developer",
     "year": "2025",
-    "image": "https://res.cloudinary.com/ddf4mvmbe/image/upload/v1759080000/placeholder.jpg",
+    "image": "https://res.cloudinary.com/ddf4mvmbe/image/upload/v1759137695/aditi_ojocnm.jpg",
     "social": {
       "linkedin": "https://linkedin.com",
       "twitter": "https://twitter.com",
@@ -659,11 +661,11 @@ const teamData = [
   },
   {
     "id": 115,
-    "name": "Tom Wilson",
+    "name": "Soumya Gupta",
     "role": "Design Team",
     "badge": "Designer",
     "year": "2025",
-    "image": "https://res.cloudinary.com/ddf4mvmbe/image/upload/v1759080000/placeholder.jpg",
+    "image": "https://res.cloudinary.com/ddf4mvmbe/image/upload/v1759137467/soumya_emhsn0.jpg",
     "social": {
       "linkedin": "https://linkedin.com",
       "twitter": "https://twitter.com",
@@ -672,11 +674,11 @@ const teamData = [
   },
   {
     "id": 116,
-    "name": "Sophie Chen",
+    "name": "Rasshi Ashish Khan",
     "role": "DSA/CP Team",
     "badge": "Competitive Programmer",
     "year": "2025",
-    "image": "https://res.cloudinary.com/ddf4mvmbe/image/upload/v1759080000/placeholder.jpg",
+    "image": "https://res.cloudinary.com/ddf4mvmbe/image/upload/v1759154024/rasshi_njbwl6.jpg",
     "social": {
       "linkedin": "https://linkedin.com",
       "twitter": "https://twitter.com",
@@ -685,11 +687,11 @@ const teamData = [
   },
   {
     "id": 117,
-    "name": "James Taylor",
+    "name": "Durgesh Gupta",
     "role": "Content & Management Team",
     "badge": "Content Creator",
     "year": "2025",
-    "image": "https://res.cloudinary.com/ddf4mvmbe/image/upload/v1759080000/placeholder.jpg",
+    "image": "https://res.cloudinary.com/ddf4mvmbe/image/upload/v1759153913/durgesh_bxpu9s.jpg",
     "social": {
       "linkedin": "https://linkedin.com",
       "twitter": "https://twitter.com",
@@ -793,7 +795,7 @@ const teamData = [
     "role": "GDG Lead 2025-26",
     "position": "GDG Lead",
     "badge": "Tech Lead",
-    "year": "2025",
+    "year": "Leads",
     "image": "https://res.cloudinary.com/ddf4mvmbe/image/upload/v1759061340/vikhyat_sir_ac0kp5.jpg",
     "social": {
       "linkedin": "https://www.linkedin.com/in/vikhyat-singh/",
@@ -1777,8 +1779,13 @@ export default function Team() {
                   <MemberImage>
                     <img 
                       src={optimizeCloudinaryUrl(member?.image)} 
+                      srcSet={[
+                        '200w', '300w', '400w', '600w', '800w'
+                      ].map(w => `${optimizeCloudinaryUrl(member?.image)}&w=${w} ${w}`).join(', ')}
+                      sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 250px"
                       alt={member.name}
-                      loading="lazy"
+                      loading={member.id <= 104 ? 'eager' : 'lazy'}
+                      fetchPriority={member.id <= 104 ? 'high' : 'auto'}
                       decoding="async"
                       style={{
                         opacity: 0,
@@ -1789,7 +1796,6 @@ export default function Team() {
                       }}
                       onError={(e) => {
                         e.target.style.opacity = '1';
-                        // Fallback to original URL if optimization fails
                         if (e.target.src !== member?.image) {
                           e.target.src = member?.image || '';
                         }
