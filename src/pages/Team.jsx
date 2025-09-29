@@ -713,7 +713,7 @@ const teamData = [
   },
   {
     "id": 118,
-    "name": "Emma White",
+    "name": "Dheeraj Yadav",
     "role": "AI/ML Team",
     "badge": "AI/ML Developer",
     "year": "2025",
@@ -779,7 +779,7 @@ const teamData = [
   
   {
     "id": 123,
-    "name": "Liam Wilson",
+    "name": "Himanshi Singh",
     "role": "Content & Management Team",
     "badge": "Content Creator",
     "year": "2025",
@@ -792,7 +792,7 @@ const teamData = [
   },
   {
     "id": 124,
-    "name": "Isabella Garcia",
+    "name": "Amitesh Vishwakarma",
     "role": "AI/ML Team",
     "badge": "AI/ML Developer",
     "year": "2025",
