@@ -465,8 +465,8 @@ const teamData = [
   {
     "id": 100,
     "name": "Shaurya Srivastava",
-    "role": "Web Dev Team",
-    "badge": "Web Developer",
+    "role": "Content & Management Team",
+    "badge": "Content Creator",
     "year": "2025",
     "image": "https://res.cloudinary.com/ddf4mvmbe/image/upload/v1759079904/meside_okwmn0.jpg",
     "social": {
@@ -479,7 +479,7 @@ const teamData = [
     "id": 101,
     "name": "Abhi Aryan",
   "role": " UI/UX Team",
-    "badge": "Video Editor",
+    "badge": "Designer",
     "year": "2025",
     "image": "https://res.cloudinary.com/ddf4mvmbe/image/upload/v1759080943/abhi_laolol.jpg",
     "social": {
@@ -491,8 +491,8 @@ const teamData = [
   {
     "id": 102,
     "name": "Aradhya Singh",
-    "role": "Management Team",
-    "badge": "Management and Outreach",
+    "role": "Content & Management Team",
+    "badge": "Content Creator",
     "year": "2025",
     "image": "https://res.cloudinary.com/ddf4mvmbe/image/upload/v1759083620/aradhya_m6kxlm.jpg",
     "social": {
@@ -504,8 +504,8 @@ const teamData = [
   {
     "id": 103,
     "name": "Shreya Tiwari",
-    "role": "Design Team",
-    "badge": "Designer",
+    "role": "AI/ML & Cyber Security Team",
+    "badge": "AI/ML Developer",
     "year": "2025",
     "image": "https://res.cloudinary.com/ddf4mvmbe/image/upload/v1759124587/shreya_py0wij.jpg",
     "social": {
@@ -517,8 +517,8 @@ const teamData = [
   {
     "id": 104,
     "name": "Saloni Verma",
-    "role": "DSA/CP Team",
-    "badge": "Competitive Programmer",
+    "role": "UI/UX Team",
+    "badge": "Designer",
     "year": "2025",
     "image": "https://res.cloudinary.com/ddf4mvmbe/image/upload/v1759081658/saloni_ws4xib.jpg",
     "social": {
@@ -543,8 +543,8 @@ const teamData = [
   {
     "id": 106,
     "name": "Priyanshu Chausasia",
-    "role": "AI/ML Team",
-    "badge": "AI/ML Developer",
+    "role": "Web Dev Team",
+    "badge": "Web Developer",
     "year": "2025",
     "image": "https://res.cloudinary.com/ddf4mvmbe/image/upload/v1759081939/priyanshu_z6mrpn.jpg",
     "social": {
@@ -556,8 +556,8 @@ const teamData = [
   {
     "id": 107,
     "name": "Shubham Yadav",
-    "role": "Web Dev Team",
-    "badge": "Web Developer",
+    "role": "Content & Management Team",
+    "badge": "Content Creator",
     "year": "2025",
     "image": "https://res.cloudinary.com/ddf4mvmbe/image/upload/v1759082067/shubham_z7xcm5.jpg",
     "social": {
@@ -569,8 +569,8 @@ const teamData = [
   {
     "id": 108,
     "name": "Manish Gupta",
-    "role": "Android Dev Team",
-    "badge": "Android Developer",
+    "role": "DSA/CP Team",
+    "badge": "Competitive Developer",
     "year": "2025",
     "image": "https://res.cloudinary.com/ddf4mvmbe/image/upload/v1759082390/manish_gnzoip.jpg",
     "social": {
@@ -582,7 +582,7 @@ const teamData = [
   {
     "id": 109,
     "name": "Saharsh Vijay Singh",
-    "role": "Design Team",
+    "role": "UI/UX Team",
     "badge": "Designer",
     "year": "2025",
     "image": "https://res.cloudinary.com/ddf4mvmbe/image/upload/v1759082702/saharsh_ttcvvi.png",
@@ -595,8 +595,8 @@ const teamData = [
   {
     "id": 110,
     "name": "Darshika Bhaskar",
-    "role": "DSA/CP Team",
-    "badge": "Competitive Programmer",
+    "role": "Content & Management Team",
+    "badge": "Content Creator",
     "year": "2025",
     "image": "https://res.cloudinary.com/ddf4mvmbe/image/upload/v1759083507/darshika_ftogro.jpg",
     "social": {
@@ -608,8 +608,8 @@ const teamData = [
   {
     "id": 111,
     "name": "Adhrav Rai",
-    "role": "Content & Management Team",
-    "badge": "Content Creator",
+    "role": "AI/ML & Cyber Security Team",
+    "badge": "AI/ML Developer",
     "year": "2025",
     "image": "https://res.cloudinary.com/ddf4mvmbe/image/upload/v1759126822/adarak_eutpfj.jpg",
     "social": {
@@ -633,9 +633,9 @@ const teamData = [
   },
   {
     "id": 113,
-    "name": "Kevin Lee",
-    "role": "Web Dev Team",
-    "badge": "Web Developer",
+    "name": "Ananya Yadav",
+    "role": "UI/UX Team",
+    "badge": "Designer",
     "year": "2025",
     "image": "https://res.cloudinary.com/ddf4mvmbe/image/upload/v1759080000/placeholder.jpg",
     "social": {
@@ -646,9 +646,9 @@ const teamData = [
   },
   {
     "id": 114,
-    "name": "Rachel Green",
-    "role": "Android Dev Team",
-    "badge": "Android Developer",
+    "name": "Anchal Patel",
+    "role": " Web Dev Team",
+    "badge": "Web Developer",
     "year": "2025",
     "image": "https://res.cloudinary.com/ddf4mvmbe/image/upload/v1759080000/placeholder.jpg",
     "social": {
@@ -659,8 +659,8 @@ const teamData = [
   },
   {
     "id": 115,
-    "name": "Tom Wilson",
-    "role": "Design Team",
+    "name": "Bhoomi Srivastava",
+    "role": "UI/UX Team",
     "badge": "Designer",
     "year": "2025",
     "image": "https://res.cloudinary.com/ddf4mvmbe/image/upload/v1759080000/placeholder.jpg",
@@ -672,7 +672,7 @@ const teamData = [
   },
   {
     "id": 116,
-    "name": "Sophie Chen",
+    "name": "Aman Kumar",
     "role": "DSA/CP Team",
     "badge": "Competitive Programmer",
     "year": "2025",
@@ -685,7 +685,7 @@ const teamData = [
   },
   {
     "id": 117,
-    "name": "James Taylor",
+    "name": "Ayush Dubey",
     "role": "Content & Management Team",
     "badge": "Content Creator",
     "year": "2025",
@@ -698,7 +698,7 @@ const teamData = [
   },
   {
     "id": 118,
-    "name": "Emma White",
+    "name": "Emma W",
     "role": "AI/ML Team",
     "badge": "AI/ML Developer",
     "year": "2025",
