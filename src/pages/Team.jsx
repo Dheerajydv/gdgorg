@@ -49,7 +49,7 @@ const TeamMemberCard = styled(motion.div)`
   background-color: ${({ theme }) => theme.colors.background.secondary};
   border-radius: 12px;
   overflow: hidden;
-  transition: transform 0.3s ease;
+  transition: transform 0.6s ease;
   height: ${({ $isLead }) => $isLead ? '400px' : '450px'};
   display: flex;
   flex-direction: column;
@@ -79,7 +79,7 @@ const MemberImage = styled.div`
     height: 100%;
     object-fit: cover;
     object-position: top center;
-    transition: transform 0.5s ease;
+    transition: transform 0.75s ease;
     will-change: transform;
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
@@ -507,7 +507,7 @@ const teamData = [
     "role": "Design Team",
     "badge": "Designer",
     "year": "2025",
-    "image": "https://res.cloudinary.com/ddf4mvmbe/image/upload/v1759080000/placeholder.jpg",
+    "image": "https://res.cloudinary.com/ddf4mvmbe/image/upload/v1759124587/shreya_py0wij.jpg",
     "social": {
       "linkedin": "https://linkedin.com",
       "twitter": "https://twitter.com",
@@ -607,11 +607,11 @@ const teamData = [
   },
   {
     "id": 111,
-    "name": "Ryan Anderson",
+    "name": "Adhrav Rai",
     "role": "Content & Management Team",
     "badge": "Content Creator",
     "year": "2025",
-    "image": "https://res.cloudinary.com/ddf4mvmbe/image/upload/v1759080000/placeholder.jpg",
+    "image": "https://res.cloudinary.com/ddf4mvmbe/image/upload/v1759126822/adarak_eutpfj.jpg",
     "social": {
       "linkedin": "https://linkedin.com",
       "twitter": "https://twitter.com",
@@ -1691,13 +1691,14 @@ export default function Team() {
       <div className="group [perspective:1000px]">
         <div
           ref={innerRef}
-          className="transform-gpu transition-all duration-300 ease-out will-change-transform"
+          className="transform-gpu will-change-transform"
           onMouseMove={handleMouseMove}
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
           style={{ 
             transformStyle: 'preserve-3d',
-            boxShadow: shadowStyle
+            boxShadow: shadowStyle,
+            transition: 'transform 150ms ease-out, box-shadow 300ms ease'
           }}
         >
           {children}
@@ -1770,7 +1771,7 @@ export default function Team() {
                 <TiltWrapper key={member.id}>
                   <TeamMemberCard 
                     variants={itemVariants} 
-                    className="transition-transform duration-300 ease-out"
+                    className="transition-transform duration-700 ease-in-out"
                     $isLead={selectedYear === "GDG Lead"}
                   >
                   <MemberImage>

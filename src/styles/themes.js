@@ -106,11 +106,12 @@ export const darkTheme = {
    
     
     background: {
-      primary: googleColors.grey[900],
-      secondary: googleColors.grey[800],
-      tertiary: googleColors.grey[700],
+      primary: '#000000',
+      secondary: '#0a0a0a',
+      tertiary: '#111111',
     },
     text: {
+      white: '#ffffff',
       primary: googleColors.grey[50],
       secondary: googleColors.grey[200],
       tertiary: googleColors.grey[400],
