@@ -1619,34 +1619,47 @@ const teamData = [
   }
 ];
 
-// Utility function to optimize Cloudinary URLs
-const optimizeCloudinaryUrl = (url) => {
-  if (!url || !url.includes('res.cloudinary.com')) {
-    return url;
-  }
-  
+// Cloudinary helpers: Build transformed URLs in the path for reliability and CDN caching
+function isCloudinaryUrl(url) {
+  return typeof url === 'string' && url.includes('res.cloudinary.com');
+}
+
+function buildCloudinaryUrl(url, width) {
   try {
-    const urlObj = new URL(url);
-    // Add Cloudinary optimization parameters
-    urlObj.searchParams.set('f_auto', 'true'); // Auto format selection (WebP, AVIF, etc.)
-    urlObj.searchParams.set('q_auto', 'true'); // Auto quality optimization
-    urlObj.searchParams.set('w_auto', 'true'); // Auto width based on container
-    urlObj.searchParams.set('c_scale', 'true'); // Scale to fit container
-    urlObj.searchParams.set('dpr_auto', 'true'); // Auto device pixel ratio
-    urlObj.searchParams.set('fl_progressive', 'true'); // Progressive loading
-    return urlObj.toString();
-  } catch (error) {
-    console.warn('Error optimizing Cloudinary URL:', error);
+    if (!isCloudinaryUrl(url)) return url;
+    // Insert transformation after "/upload/"
+    const uploadIndex = url.indexOf('/upload/');
+    if (uploadIndex === -1) return url;
+
+    const prefix = url.slice(0, uploadIndex + '/upload/'.length);
+    const suffix = url.slice(uploadIndex + '/upload/'.length);
+    // If width is provided, cap it; otherwise omit
+    const widthPart = width ? `,w_${width}` : '';
+    const transformation = `f_auto,q_auto,dpr_auto,c_limit${widthPart}`;
+
+    // Avoid duplicating transformations
+    if (suffix.startsWith('f_auto') || suffix.startsWith('q_auto')) {
+      return url; // assume already transformed
+    }
+    return `${prefix}${transformation}/${suffix}`;
+  } catch (e) {
+    console.warn('Error building Cloudinary URL:', e);
     return url;
   }
-};
+}
+
+function buildResponsiveSrcSet(url) {
+  if (!isCloudinaryUrl(url)) return undefined;
+  const widths = [200, 300, 400, 600, 800];
+  return widths.map(w => `${buildCloudinaryUrl(url, w)} ${w}w`).join(', ');
+}
 
 export default function Team() {
   const { fileUrl } = useAuth();
   const [upload, setUpload] = useState(false);
   const [selectedYear, setSelectedYear] = useState("GDG Lead");
   const sectionRef = useRef(null);
-  const isInView = useInView(sectionRef, { once: false, amount: 0.1 });
+  const isInView = useInView(sectionRef, { once: true, amount: 0.1 });
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -1725,7 +1738,44 @@ export default function Team() {
   function handleUpload() {
     setUpload(true);
   }
-  const filteredMembers = selectedYear?.includes('GDG Lead') ? teamData.filter(member => member?.position?.includes("GDG Lead")) : teamData?.filter(member => member?.year === selectedYear);
+  // Normalize role to a category key for ordering
+  function getTeamCategory(member) {
+    const role = (member?.role || '').toLowerCase();
+    if (role.includes('content') || role.includes('management')) return 'content';
+    if (role.includes('web')) return 'web';
+    if (role.includes('ai/ml') || role.includes('ai') || role.includes('machine') || role.includes('ml') || role.includes('cyber')) return 'ai';
+    if (role.includes('android')) return 'android';
+    if (role.includes('ui/ux') || role.includes('ui') || role.includes('ux') || role.includes('design')) return 'uiux';
+    if (role.includes('dsa') || role.includes('cp')) return 'dsa';
+    return 'other';
+  }
+
+  const orderRank = {
+    content: 1,
+    web: 2,
+    ai: 3,
+    android: 4,
+    uiux: 5,
+    dsa: 6,
+    other: 999
+  };
+
+  let filteredMembers = selectedYear?.includes('GDG Lead')
+    ? teamData.filter(member => member?.position?.includes("GDG Lead"))
+    : teamData?.filter(member => member?.year === selectedYear);
+
+  // For 2025, sort by the specified category order
+  if (selectedYear === '2025') {
+    filteredMembers = [...filteredMembers].sort((a, b) => {
+      // Keep Shaurya Srivastava (id: 100) always first
+      if (a.id === 100 && b.id !== 100) return -1;
+      if (b.id === 100 && a.id !== 100) return 1;
+      const ra = orderRank[getTeamCategory(a)] || 999;
+      const rb = orderRank[getTeamCategory(b)] || 999;
+      if (ra !== rb) return ra - rb;
+      return a.name.localeCompare(b.name);
+    });
+  }
   console.log("fileUrll", fileUrl)
   console.log("filtered member", filteredMembers)
 
@@ -1780,7 +1830,7 @@ export default function Team() {
           <motion.div
             variants={containerVariants}
             initial="hidden"
-            animate={isInView ? "visible" : "hidden"}
+            animate={isInView ? "visible" : undefined}
           >
             <TeamGrid>
               {filteredMembers?.map((member) => (
@@ -1792,26 +1842,37 @@ export default function Team() {
                   >
                   <MemberImage>
                     <img 
-                      src={optimizeCloudinaryUrl(member?.image)} 
-                      srcSet={[
-                        '200w', '300w', '400w', '600w', '800w'
-                      ].map(w => `${optimizeCloudinaryUrl(member?.image)}&w=${w} ${w}`).join(', ')}
+                      src={buildCloudinaryUrl(member?.image, 600)} 
+                      srcSet={buildResponsiveSrcSet(member?.image)}
                       sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 250px"
                       alt={member.name}
                       loading={member.id <= 104 ? 'eager' : 'lazy'}
                       fetchPriority={member.id <= 104 ? 'high' : 'auto'}
+                      referrerPolicy={!isCloudinaryUrl(member?.image) ? 'no-referrer' : undefined}
                       decoding="async"
                       style={{
                         opacity: 0,
                         transition: 'opacity 0.3s ease-in-out'
                       }}
                       onLoad={(e) => {
+                        if (e.target.dataset.placeholder === 'true') {
+                          return; // keep reduced opacity for placeholder
+                        }
                         e.target.style.opacity = '1';
                       }}
                       onError={(e) => {
-                        e.target.style.opacity = '1';
-                        if (e.target.src !== member?.image) {
-                          e.target.src = member?.image || '';
+                        // fallback to original or a placeholder to avoid broken images
+                        if (isCloudinaryUrl(member?.image)) {
+                          const original = member?.image;
+                          if (e.target.src !== original) {
+                            e.target.src = original;
+                          }
+                          e.target.style.opacity = '1';
+                        } else {
+                          // Use local logo as placeholder with reduced opacity for subtlety
+                          e.target.dataset.placeholder = 'true';
+                          e.target.src = '/GDG_Logo.svg';
+                          e.target.style.opacity = '0.35';
                         }
                       }}
                     />
