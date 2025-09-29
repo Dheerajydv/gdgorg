@@ -678,7 +678,7 @@ const teamData = [
     "role": "UI/UX Team",
     "badge": "Designer",
     "year": "2025",
-    "image": "https://res.cloudinary.com/ddf4mvmbe/image/upload/v1759080000/placeholder.jpg",
+    "image": "https://res.cloudinary.com/dsvnqnvt7/image/upload/v1759158292/Ananya_Yadav_ajfa7s.jpg",
     "social": {
       "linkedin": "https://linkedin.com",
       "twitter": "https://twitter.com",
@@ -717,7 +717,7 @@ const teamData = [
     "role": "AI/ML Team",
     "badge": "AI/ML Developer",
     "year": "2025",
-    "image": "https://res.cloudinary.com/ddf4mvmbe/image/upload/v1759080000/placeholder.jpg",
+    "image": "https://res.cloudinary.com/dsvnqnvt7/image/upload/v1759159004/IMG_20250915_192641_-_Dheeraj_YADAV_arivuy.png",
     "social": {
       "linkedin": "https://linkedin.com",
       "twitter": "https://twitter.com",
@@ -730,7 +730,7 @@ const teamData = [
     "role": " Web Dev Team",
     "badge": "Web Developer",
     "year": "2025",
-    "image": "https://res.cloudinary.com/ddf4mvmbe/image/upload/v1759080000/placeholder.jpg",
+    "image": "https://res.cloudinary.com/dsvnqnvt7/image/upload/v1759158291/Anchal_Patel_jz7mzf.jpg",
     "social": {
       "linkedin": "https://linkedin.com",
       "twitter": "https://twitter.com",
@@ -743,7 +743,7 @@ const teamData = [
     "role": "UI/UX Team",
     "badge": "Designer",
     "year": "2025",
-    "image": "https://res.cloudinary.com/ddf4mvmbe/image/upload/v1759080000/placeholder.jpg",
+    "image": "https://res.cloudinary.com/dsvnqnvt7/image/upload/v1759165687/bhoomi_isgc7f.jpg",
     "social": {
       "linkedin": "https://linkedin.com",
       "twitter": "https://twitter.com",
@@ -756,7 +756,7 @@ const teamData = [
     "role": "DSA/CP Team",
     "badge": "Competitive Programmer",
     "year": "2025",
-    "image": "https://res.cloudinary.com/ddf4mvmbe/image/upload/v1759080000/placeholder.jpg",
+    "image": "https://res.cloudinary.com/dsvnqnvt7/image/upload/v1759159139/Picsart_25-07-01_23-23-15-094_-_Aman_Kumar_imtdmy.jpg",
     "social": {
       "linkedin": "https://linkedin.com",
       "twitter": "https://twitter.com",
@@ -769,7 +769,7 @@ const teamData = [
     "role": "Content & Management Team",
     "badge": "Content Creator",
     "year": "2025",
-    "image": "https://res.cloudinary.com/ddf4mvmbe/image/upload/v1759080000/placeholder.jpg",
+    "image": "https://res.cloudinary.com/dsvnqnvt7/image/upload/v1759158955/IMG63829291UE73_-_Ayush_Dubey_nvw1gk.jpg",
     "social": {
       "linkedin": "https://linkedin.com",
       "twitter": "https://twitter.com",
@@ -796,7 +796,7 @@ const teamData = [
     "role": "AI/ML Team",
     "badge": "AI/ML Developer",
     "year": "2025",
-    "image": "https://res.cloudinary.com/ddf4mvmbe/image/upload/v1759080000/placeholder.jpg",
+    "image": "https://res.cloudinary.com/dsvnqnvt7/image/upload/v1759158822/IMG-20250915-WA0043_-_Amitesh_Vishwakarma_mw8bli.jpg",
     "social": {
       "linkedin": "https://linkedin.com",
       "twitter": "https://twitter.com",
