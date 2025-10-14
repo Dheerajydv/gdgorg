@@ -76,9 +76,13 @@ export default function Events() {
   const [events, setEvents] = useState([]);
   const [filteredEvents, setFilteredEvents] = useState([]);
   const [activeFilter, setActiveFilter] = useState('upcoming');
+  const [activeCategory, setActiveCategory] = useState("All")
   const [isLoading, setIsLoading] = useState(true);
   const [close, setclose] = useState(true);
   const [currentevent, setCurrentEvent] = useState(activeEvent);
+
+  const categories = ["All", "Workshop", "Confrence", "Hackathon", "Meetup", "Study Jam"]
+
   useEffect(() => {
     const getEvents = async () => {
       setIsLoading(true);
@@ -115,6 +119,10 @@ export default function Events() {
       new Date(a.date).getTime() - new Date(b.date).getTime()
     )[0];
   };
+
+  const handleCategoryChange = (category) => {
+    setActiveCategory(category)
+  }
 
   const nextEvent = getNextEvent();
   return (
@@ -165,8 +173,6 @@ export default function Events() {
             {/* <img src={gdgGif} alt="GDG logo animation" /> */}
           </div>
         </div>
-                 
-
                 </motion.div>
               </div>
             </motion.div>
@@ -179,7 +185,10 @@ export default function Events() {
             >
               <EventFilters
                 activeFilter={activeFilter}
+                activeCategory={activeCategory}
                 onFilterChange={handleFilterChange}
+                onCategoryChange={handleCategoryChange}
+                categories={categories}
               />
 
               <EventsList

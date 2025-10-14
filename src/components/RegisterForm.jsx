@@ -230,7 +230,11 @@ const RegisterModal = ( {event, onClose} ) => {
         </ModalClose>
         
         <ModalHeader >
-          <h2>Register for {event?.title}</h2>
+          <h2
+            style={{
+              marginRight: "1em"
+            }}
+          >Register for {event?.title}</h2>
           {!submitted && (
             <div className="step-indicator">
               <div className={`step ${step >= 1 ? 'active' : ''}`}>1</div>

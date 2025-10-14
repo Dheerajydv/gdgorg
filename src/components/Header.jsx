@@ -206,7 +206,13 @@ const Header = () => {
       <NavActions>
         {!isAuthenticated && (
           <Link to="/auth">
-            <Button>SignIn/SignUp</Button>
+            <Button
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center"
+              }}
+            >SignIn/SignUp</Button>
           </Link>
         )}
         <ThemeToggle toggle={toggleTheme} />

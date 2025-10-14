@@ -12,10 +12,32 @@ const HeroSection = () => {
     return () => clearTimeout(timeout);
   }, []);
   return (
-    <section id="home" className="hero">
-      <div className="hero-container">
+    <section
+     id="home" className="hero">
+      <div
+        style={{
+          width: "100%",
+          height: "100%",
+          borderRadius: "10px",
+          WebkitMaskImage:
+            "linear-gradient(to bottom, transparent 0%, black 10%, black 90%, transparent 100%), linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%)",
+          maskImage:
+            "linear-gradient(to bottom, transparent 0%, black 10%, black 90%, transparent 100%), linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%)",
+          WebkitMaskComposite: "intersect",
+          maskComposite: "intersect",
+          WebkitMaskRepeat: "no-repeat",
+          maskRepeat: "no-repeat",
+        }}
+       className="hero-container"
+      >
         <div className={`hero-content ${isVisible ? 'visible' : ''}`}>
-          <div className="hero-text">
+          <div
+            style={{
+              marginLeft: "2em",
+              paddingLeft: "2em"
+            }} 
+            className="hero-text"
+          >
             <h1>Google Developer Group</h1>
             <h2>on Campus MMMUT</h2>
             <p>Developing Together a Better Tomorrow</p>

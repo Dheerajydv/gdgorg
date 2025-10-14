@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import { motion, AnimatePresence } from "framer-motion";
-import { Eye, EyeOff, Mail, Lock, User, Github as GitHub, Twitter, Camera } from "lucide-react";
+import { Eye, EyeOff, Mail, Lock, User, Github as GitHub, Twitter, Camera, } from "lucide-react";
 import axios from "axios"; // Ensure axios is imported
 import { useNavigate } from "react-router-dom"; // Ensure useNavigate is imported
 import { useAuth } from "../contexts/useAuth";
@@ -125,9 +125,11 @@ const AuthPage = () => {
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
   };
-const handleOAuthLogin = (provider) => {
-  window.location.href = `https://gdg-website-2025-oghz.vercel.app/api/auth/${provider}`;
-};
+
+  const handleOAuthLogin = (provider) => {
+    window.location.href = `https://gdg-website-2025-oghz.vercel.app/api/auth/${provider}`;
+  };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (!validateForm()) return;
@@ -176,6 +178,12 @@ const handleOAuthLogin = (provider) => {
         >
           <FormHeader>
             <motion.div
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                padding: "1rem",
+              }}
               initial={{ scale: 0.8, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               transition={{ duration: 0.5 }}
@@ -218,7 +226,7 @@ const handleOAuthLogin = (provider) => {
             </FormGroup>
             <FormGroup>
               <Label hasError={!!errors.password}>Password</Label>
-              <PasswordWrapper>
+              <PasswordWrapper >
                 <Input
                   type={showPassword ? "text" : "password"}
                   name="password"
@@ -226,6 +234,9 @@ const handleOAuthLogin = (provider) => {
                   value={form.password}
                   onChange={handleChange}
                   hasError={!!errors.password}
+                  style={{
+                    width: "100%",
+                  }}
                 />
                 <PasswordToggle
                   type="button"
@@ -248,6 +259,7 @@ const handleOAuthLogin = (provider) => {
                     gap: "0.2rem",
                     border: "2px solid #c9c5c5",
                     borderRadius: "0.2rem",
+                    marginTop: "1em"
                   }}
                 >
                   <Label
