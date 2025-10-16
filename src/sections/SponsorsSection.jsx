@@ -7,6 +7,32 @@ const SponsorsSectionContainer = styled.section`
   background-color: ${({ theme }) => theme.colors.background.primary};
   position: relative;
   overflow: hidden;
+
+  /* Decorative gradient orbs for depth */
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    pointer-events: none;
+    filter: blur(70px);
+    opacity: 0.25;
+  }
+  &::before {
+    top: -80px;
+    right: -120px;
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    background: radial-gradient(closest-side, ${({ theme }) => theme.googleColors.blue.primary}, transparent 65%);
+  }
+  &::after {
+    bottom: -100px;
+    left: -120px;
+    width: 360px;
+    height: 360px;
+    border-radius: 50%;
+    background: radial-gradient(closest-side, ${({ theme }) => theme.googleColors.green.primary}, transparent 65%);
+  }
 `;
 
 const SectionContent = styled.div`
@@ -20,33 +46,40 @@ const SectionHeader = styled.div`
 `;
 
 const SectionTitle = styled.h2`
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
+  font-size: 2.75rem;
+  line-height: 1.15;
+  margin-bottom: 1.25rem;
   position: relative;
   display: inline-block;
-  
+  background: linear-gradient(90deg, ${({ theme }) => theme.googleColors.blue.primary}, ${({ theme }) => theme.googleColors.green.primary});
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+
   &::after {
     content: '';
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    bottom: -0.5rem;
+    bottom: -0.6rem;
     height: 4px;
-    width: 60px;
-    background-color: ${({ theme }) => theme.colors.primary};
+    width: 84px;
+    border-radius: 999px;
+    background: linear-gradient(90deg, ${({ theme }) => theme.googleColors.blue.primary}, ${({ theme }) => theme.googleColors.yellow.primary});
+    opacity: 0.85;
   }
 `;
 
 const SectionDescription = styled.p`
-  font-size: 1.125rem;
-  max-width: 700px;
+  font-size: 1.1rem;
+  max-width: 760px;
   margin: 0 auto;
   color: ${({ theme }) => theme.colors.text.secondary};
 `;
 
 const SponsorsGrid = styled.div`
   display: grid;
-  gap: 3rem;
+  gap: 3.5rem;
 `;
 
 const SponsorTier = styled.div`
@@ -54,9 +87,20 @@ const SponsorTier = styled.div`
 `;
 
 const TierTitle = styled.h3`
-  font-size: 1.75rem;
-  margin-bottom: 2rem;
+  font-size: 1.5rem;
+  margin: 0 auto 2rem;
   text-align: center;
+  width: max-content;
+  padding: 0.4rem 0.9rem;
+  border-radius: 999px;
+  background: ${({ theme, $type }) => {
+    switch($type) {
+      case 'platinum': return `linear-gradient(135deg, ${theme.googleColors.blue.primary}22, ${theme.googleColors.blue.primary}11)`;
+      case 'gold': return `linear-gradient(135deg, ${theme.googleColors.yellow.dark}22, ${theme.googleColors.yellow.dark}11)`;
+      case 'silver': return `linear-gradient(135deg, ${theme.googleColors.grey[600]}22, ${theme.googleColors.grey[600]}11)`;
+      default: return `linear-gradient(135deg, ${theme.colors.primary}22, ${theme.colors.primary}11)`;
+    }
+  }};
   color: ${({ theme, $type }) => {
     switch($type) {
       case 'platinum': return theme.googleColors.blue.primary;
@@ -65,27 +109,47 @@ const TierTitle = styled.h3`
       default: return theme.colors.text.primary;
     }
   }};
+  border: 1px solid ${({ theme }) => theme.colors.border};
 `;
 
 const SponsorsList = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2.25rem;
   justify-items: center;
 `;
 
 const SponsorCard = styled(motion.div)`
-  background-color: ${({ theme }) => theme.colors.background.secondary};
-  border-radius: 12px;
+  position: relative;
+  background: linear-gradient(180deg, ${({ theme }) => theme.colors.surfaceElevated}, ${({ theme }) => theme.colors.surface});
+  border-radius: 16px;
   overflow: hidden;
   width: 100%;
-  max-width: 300px;
-  box-shadow: 0 4px 20px ${({ theme }) => theme.colors.shadow};
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  
+  max-width: 320px;
+  border: 1px solid ${({ theme }) => theme.colors.border};
+  box-shadow: 0 6px 24px ${({ theme }) => theme.colors.shadow};
+  transition: transform 0.35s ${({ theme }) => theme.colors.transitions?.default || 'ease'}, box-shadow 0.35s ${({ theme }) => theme.colors.transitions?.default || 'ease'};
+
+  /* Subtle gradient border glow */
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    padding: 1px;
+    background: linear-gradient(135deg, ${({ theme }) => theme.googleColors.blue.primary}33, transparent, ${({ theme }) => theme.googleColors.green.primary}33);
+    -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+    -webkit-mask-composite: xor;
+            mask-composite: exclude;
+    opacity: 0.0;
+    transition: opacity 0.35s ease;
+  }
+
+  &:hover::before { opacity: 1; }
+
   &:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 8px 30px ${({ theme }) => theme.colors.shadow};
+    transform: translateY(-10px) rotateX(2deg);
+    box-shadow: 0 16px 40px ${({ theme }) => theme.colors.shadow};
   }
 `;
 
@@ -95,44 +159,57 @@ const SponsorLogo = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: ${({ theme }) => theme.colors.background.primary};
+  background: linear-gradient(180deg, ${({ theme }) => theme.colors.background.secondary}, ${({ theme }) => theme.colors.background.tertiary});
+  border-bottom: 1px solid ${({ theme }) => theme.colors.border};
   
   img {
     max-width: 100%;
     max-height: 100%;
     object-fit: contain;
-    transition: transform 0.3s ease;
+    transition: transform 0.35s ease, filter 0.35s ease;
   }
   
   ${SponsorCard}:hover & img {
-    transform: scale(1.05);
+    transform: scale(1.07) translateZ(0);
+    filter: drop-shadow(0 6px 16px rgba(0,0,0,0.25));
   }
 `;
 
 const SponsorContent = styled.div`
-  padding: 1.5rem;
+  padding: 1.25rem 1.5rem 1.5rem;
   text-align: center;
 `;
 
 const SponsorName = styled.h4`
-  font-size: 1.25rem;
-  margin-bottom: 0.5rem;
+  font-size: 1.15rem;
+  margin-bottom: 0.4rem;
   color: ${({ theme }) => theme.colors.text.primary};
 `;
 
 const SponsorDescription = styled.p`
-  font-size: 0.875rem;
+  font-size: 0.9rem;
   color: ${({ theme }) => theme.colors.text.secondary};
   margin-bottom: 1rem;
 `;
 
 const SponsorLink = styled.a`
-  color: ${({ theme }) => theme.colors.primary};
-  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0.9rem;
+  border-radius: 999px;
+  color: ${({ theme }) => theme.googleColors.blue.primary};
+  background: ${({ theme }) => `${theme.googleColors.blue.primary}15`};
+  border: 1px solid ${({ theme }) => `${theme.googleColors.blue.primary}33`};
+  font-weight: 600;
   text-decoration: none;
-  
+  transition: background 0.25s ease, transform 0.2s ease, box-shadow 0.25s ease;
+  box-shadow: 0 2px 8px ${({ theme }) => theme.colors.shadow};
+
   &:hover {
-    text-decoration: underline;
+    background: ${({ theme }) => `${theme.googleColors.blue.primary}25`};
+    transform: translateY(-1px);
+    box-shadow: 0 6px 14px ${({ theme }) => theme.colors.shadow};
   }
 `;
 
